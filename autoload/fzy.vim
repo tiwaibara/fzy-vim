@@ -7,7 +7,7 @@ let g:autoloaded_fzy = 1
 function! fzy#execute(shell_command, vim_command)
   let output = ''
 
-  silent let output = system(a:shell_command)
+  let output = system(a:shell_command)
 
   redraw!
 
